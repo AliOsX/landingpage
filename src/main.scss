@@ -1,0 +1,25 @@
+// Vendor directory is for third-party CSS.
+@import "vendor/init";
+
+$pink: #eb008b;
+
+@font-face {
+  font-family: '232MK';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/public/232MKMedium.ttf');
+}
+
+.width-limit {
+  @include make-xs-column(12);
+  @include make-md-column(10);
+  @include make-md-column-offset(1);
+  @include make-lg-column(8);
+  @include make-lg-column-offset(2);
+}
+
+.doc {
+  @include make-xs-column(12);
+  @include make-sm-column(6);
+  @include make-md-column(4);
+}
